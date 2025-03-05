@@ -1,0 +1,197 @@
+/* إعدادات عامة للصفحة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-top: 80px; /* لتجنب اختفاء العنوان تحت الشريط */
+}
+
+/* ======== تصميم الهيدر ======== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #0072ff, #f5af19);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    margin-bottom: 10px;
+}
+
+.header-content h1 {
+    font-size: 28px;
+}
+
+.header-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* زر الحجز */
+.btn-primary {
+    display: inline-block;
+    background: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #e04e2a;
+}
+
+/* ======== الشريط العلوي (القائمة) ======== */
+nav {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* ======== القسم التعريفي ======== */
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.intro h2 {
+    font-size: 26px;
+    color: #0072ff;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* فيديو العرض */
+.video-container {
+    margin-top: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ======== المرافق ======== */
+.facilities {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.facilities h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #ff5733;
+    margin-bottom: 15px;
+}
+
+.facility-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+.facility-item {
+    background: #0072ff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* ======== الحزم المخصصة ======== */
+.packages {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.packages h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #f5af19;
+    margin-bottom: 15px;
+}
+
+.package-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.package-card {
+    background: #f5af19;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    background: #e09e15;
+}
+
+/* ======== الفوتر ======== */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
